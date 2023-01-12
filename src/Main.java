@@ -1,13 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        Encapsulation rezult = new Encapsulation(110, 40, 220);
+        Encapsulation s = new Encapsulation();
 
+        s.setI(50);
+        s.setU(220);
+        s.setR(10);
 
-
-        System.out.println("Знайдено по формулам");
-        System.out.println("Сила струму: " + rezult.current());
-        System.out.println("Опір: " + rezult.resistance());
-        System.out.println("Напруга: " + rezult.voltage());
+        System.out.println("Сила струму: " + s.getI());
+        System.out.println("Опір: " + s.getR());
+        System.out.println("Напруга: " + s.getU());
     }
 }
