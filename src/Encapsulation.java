@@ -2,21 +2,28 @@ public class Encapsulation {
 
     private double I,R,U;
 
-    public Encapsulation(double i, double r, double u) {
-        this.I = i;
+
+    public void setR(double r) {
         this.R = r;
+    }
+
+    public void setI(double i) {
+        this.I = i;
+    }
+
+    public void setU(double u) {
         this.U = u;
     }
 
-    public double resistance()
-    {
-        return U/I;
+    public double getI() {
+        return I;
     }
 
-    public double current(){
-        return U/R;
+    public double getR() {
+        return R;
     }
-    public double voltage() {
-        return I*R;
+
+    public double getU() {
+        return U;
     }
 }
